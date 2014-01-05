@@ -7,12 +7,33 @@
 //
 
 #import "AppDelegate.h"
+#import "Track.h"
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    Track *aTrack = [[Track alloc] init];
+    self.track = aTrack;
+    [self updateUserInterface];
+
+}
+
+- (IBAction)mute:(id)sender {
+    self.track.volume = 0.0;
+    [self updateUserInterface];
+}
+
+- (IBAction)takeFloatValueForVolumeFrom:(NSSlider *)sender {
+    self.track.volume = sender.floatValue;
+    [self updateUserInterface];
+}
+
+- (void)updateUserInterface
+{
+    float volume = self.track.volume;
+    self.textField.floatValue = volume;
+    self.slider.floatValue = volume;
 }
 
 @end

@@ -18,6 +18,7 @@
 		8C0639971878E4AB0079B9E3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0639761878E4AB0079B9E3 /* Cocoa.framework */; };
 		8C06399F1878E4AB0079B9E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C06399D1878E4AB0079B9E3 /* InfoPlist.strings */; };
 		8C0639A11878E4AB0079B9E3 /* SoundCloudClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0639A01878E4AB0079B9E3 /* SoundCloudClientTests.m */; };
+		8C0639AF1878ECC00079B9E3 /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0639AE1878ECC00079B9E3 /* Track.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		8C06399C1878E4AB0079B9E3 /* SoundCloudClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoundCloudClientTests-Info.plist"; sourceTree = "<group>"; };
 		8C06399E1878E4AB0079B9E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8C0639A01878E4AB0079B9E3 /* SoundCloudClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundCloudClientTests.m; sourceTree = "<group>"; };
+		8C0639AD1878ECC00079B9E3 /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
+		8C0639AE1878ECC00079B9E3 /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				8C06398B1878E4AB0079B9E3 /* MainMenu.xib */,
 				8C06398E1878E4AB0079B9E3 /* Images.xcassets */,
 				8C06397D1878E4AB0079B9E3 /* Supporting Files */,
+				8C0639AD1878ECC00079B9E3 /* Track.h */,
+				8C0639AE1878ECC00079B9E3 /* Track.m */,
 			);
 			path = SoundCloudClient;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C0639AF1878ECC00079B9E3 /* Track.m in Sources */,
 				8C06398A1878E4AB0079B9E3 /* AppDelegate.m in Sources */,
 				8C0639831878E4AB0079B9E3 /* main.m in Sources */,
 			);
