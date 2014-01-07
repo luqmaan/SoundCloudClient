@@ -7,33 +7,21 @@
 //
 
 #import "AppDelegate.h"
-#import "Track.h"
 
 @implementation AppDelegate
 
+// play tracks from file
+// download tracks from playlist
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    Track *aTrack = [[Track alloc] init];
-    self.track = aTrack;
-    [self updateUserInterface];
-
+    
 }
 
-- (IBAction)mute:(id)sender {
-    self.track.volume = 0.0;
-    [self updateUserInterface];
+- (IBAction)play:(id)sender {
+    
+    
 }
 
-- (IBAction)takeFloatValueForVolumeFrom:(NSSlider *)sender {
-    self.track.volume = sender.floatValue;
-    [self updateUserInterface];
-}
-
-- (void)updateUserInterface
-{
-    float volume = self.track.volume;
-    self.textField.floatValue = volume;
-    self.slider.floatValue = volume;
-}
 
 @end

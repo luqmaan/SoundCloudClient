@@ -12,15 +12,13 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-@property (weak) IBOutlet NSTextField *textField;
-@property (weak) IBOutlet NSButton *muteBtn;
-@property (assign) IBOutlet NSWindow *window;
-@property (weak) IBOutlet NSSlider *slider;
+@property (unsafe_unretained) IBOutlet NSWindow *window;
 
-@property (strong) Track *track;
+@property (weak) IBOutlet NSTextField *username;
+@property (weak) IBOutlet NSTextField *songTitle;
+@property (weak) IBOutlet NSTextField *songArtist;
+@property (weak) IBOutlet NSScrollView *playlist;
 
-- (IBAction)mute:(id)sender;
-- (IBAction)takeFloatValueForVolumeFrom:(id)sender;
-- (void)updateUserInterface;
+- (IBAction)play:(id)sender;
 
 @end
